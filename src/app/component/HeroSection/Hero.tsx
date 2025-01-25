@@ -4,14 +4,13 @@ import styles from './hero.module.css';
 const Hero = () => {
   return (
     <div className="relative max-w-[1440px] h-[100vh] bg-black mx-auto">
-      <div className={`${styles.Image} w-full h-[600px]`}>
+      <div className={`w-full h-full`}>
         <Image
           src="/Hero/Hero.jpeg"
           alt="Hero Image"
           width={300}
           height={300}
-          layout="responsive"
-          className={`${styles.Image} w-full h-full `}
+          className={`${styles.Image} w-full h-full`}
         />
       </div>
 
