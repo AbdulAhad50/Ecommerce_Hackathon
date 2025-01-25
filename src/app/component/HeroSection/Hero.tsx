@@ -21,7 +21,7 @@ const Hero = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
                 
               </p>
-              <button className={`${style.btn}`}>BUY NOW</button>
+              <button className={`${style.btn} w-[222px] h-[74px] top-[585px] left-[778px] p-[25px_72px] gap-[10px] opacity-0 bg-[#b88e2f] font-poppins text-[1.143vw] font-bold leading-[24px] text-left underline-position-[from-font] decoration-none text-white`}>BUY NOW</button>
         </div>
       </div>
     </div>
