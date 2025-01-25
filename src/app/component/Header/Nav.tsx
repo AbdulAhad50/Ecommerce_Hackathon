@@ -8,20 +8,20 @@ import { CiSearch } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
 import { MenuIcon } from "lucide-react";
 // import DesktopCart from "@/app/DesktopCart/DesktopCart";
-// import { StoreData } from "@/app/store/StoreContext";
 // import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-// import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import style from "./nav.module.css";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { StoreData } from "@/app/store/StoreContext";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 
 const Nav = () => {
-  // const [search, setSearch] = useState("");
-  // const { data, Search } = useContext(StoreData);
+  const [search, setSearch] = useState("");
+  const { data, Search } = useContext(StoreData);
 
-  // function Searching() {
-  //   console.log(search);
-  //   Search(search);
-  // }
+  function Searching() {
+    console.log(search);
+    Search(search);
+  }
 
   return (
     <div
@@ -59,22 +59,22 @@ const Nav = () => {
             </Link>
           </li>
           <li className="mt-1">
-            <CiSearch />
-            {/* <Popover>
+            <Popover>
               <PopoverTrigger>
+                  <CiSearch />
               </PopoverTrigger>
-              <PopoverContent> */}
-                {/* <input
+              <PopoverContent>
+                 <input
                   type="text"
                   placeholder="Search"
                   className={`${style.Search}`}
                   onChange={(e) => setSearch(e.target.value)}
-                /> */}
-                {/* <button className={`${style.SearchBtn}`} onClick={Searching}>
+                /> 
+                 <button className={`${style.SearchBtn}`} onClick={Searching}>
                   Search
                 </button>
               </PopoverContent>
-            </Popover> */}
+            </Popover>
           </li>
           <li>
             <Link href={"/favourite"}>
@@ -89,7 +89,7 @@ const Nav = () => {
                   <span
                     className={`position-absolute top-0 right-0 start-100 translate-middle badge rounded-pill ${style.bedge}`}
                   >
-                    {/* {data.length} */}
+                    {data.length}
                   </span>
                 </SheetTrigger>
                 <SheetContent>
