@@ -1,12 +1,15 @@
-import React from 'react'
-import Hero from './component/HeroSection/Hero'
+import Hero from "./component/HeroSection/Hero";
 
-const Home = () => {
+
+
+
+export default function Home() {
+
+  
   return (
-    <div>
-          <Hero/>
-    </div>
-  )
-}
 
-export default Home
+      <div className="max-w-[1440px] mx-[auto]">
+          <Hero/>
+      </div>
+  );
+}

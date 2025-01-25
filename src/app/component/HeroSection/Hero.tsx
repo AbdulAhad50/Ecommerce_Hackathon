@@ -1,27 +1,28 @@
 import Image from "next/image";
-import style from './hero.module.css'
+import styles from './hero.module.css';
+
 const Hero = () => {
   return (
-    <div className="relative max-[1440px] h-[100vh] bg-black mx-[auto]">
-      <div className="w-full h-full">
+    <div className="relative max-w-[1440px] h-[100vh] bg-black mx-auto">
+      <div className={`${styles.Image} w-full h-[600px]`}>
         <Image
-          src={"/Hero/Hero.jpeg"}
-          alt={""}
+          src="/Hero/Hero.jpeg"
+          alt="Hero Image"
           width={300}
           height={300}
-          className="w-full h-full"
+          layout="responsive"
+          className={`${styles.Image} w-full h-full `}
         />
       </div>
 
-      <div className={`absolute w-[45.929vw]  top-[53px] right-[60px] h-[443px] bg-[#FFF3E3] ${style.smallSize}`}>
-        <div className="flex flex-col  gap-6 pt-8 pl-[40px]">
-              <span className={`${style.arrival}`}>New Arrival</span>
-              <h3 className={`${style.discover}`}>Discover Our New Collection</h3>
-              <p className={`${style.discoverP}`}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
-                
-              </p>
-              <button className={`${style.btn} w-[222px] h-[74px] top-[585px] left-[778px] p-[25px_72px] gap-[10px] opacity-0 bg-[#b88e2f] font-poppins text-[1.143vw] font-bold leading-[24px] text-left underline-position-[from-font] decoration-none text-white`}>BUY NOW</button>
+      <div className={`${styles.heroContent} absolute top-[53px] right-[60px]`}>
+        <div className="flex flex-col gap-6 pt-8 pl-[40px]">
+          <span className={styles.arrival}>New Arrival</span>
+          <h3 className={styles.discover}>Discover Our New Collection</h3>
+          <p className={styles.discoverP}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
+          </p>
+          <button className={styles.btn}>BUY NOW</button>
         </div>
       </div>
     </div>
