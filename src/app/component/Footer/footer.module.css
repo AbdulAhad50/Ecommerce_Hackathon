@@ -1,9 +1,9 @@
-.smallSizeWidth{
-  padding-top:30px ;
+.smallSizeWidth {
+  padding-top: 30px;
 }
 
-.MainChildStyle{
-  padding-top:50px ;
+.MainChildStyle {
+  padding-top: 50px;
 }
 
 .FooterHeading {
@@ -12,8 +12,6 @@
   font-weight: 700;
   line-height: 36px;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 .FirstChildLink {
@@ -22,19 +20,15 @@
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
   color: #9F9F9F;
 }
 
-.SecondChildLink{
+.SecondChildLink {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 .FooterLinks {
@@ -43,8 +37,6 @@
   font-weight: 500;
   line-height: 24px;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
   color: #9f9f9f;
 }
 
@@ -66,99 +58,76 @@
   gap: 20px;
 }
 
-.Input{
+.Input {
   width: 200px;
   height: 30px;
   border-bottom: 1px solid #000000;
   outline: none;
-
 }
 
-.NewsLetterSubscribe{
+.NewsLetterSubscribe {
   font-family: Poppins;
   font-size: 14px;
   font-weight: 500;
   line-height: 21px;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  /* border-top: 1px solid #000000; */
-  width: 75.01px;
-  height: 14px;
-  gap: 0px;
-  opacity: 0px;
+  opacity: 0;
   text-decoration: underline;
   cursor: pointer;
-
 }
 
-
-.bottomStyle{
+.bottomStyle {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-
 }
 
-.mainStyleDiv{
+.mainStyleDiv {
   padding: 0 30px;
 }
 
-@media only screen and (min-width:300) and (max-width:880){
-    .MainChildStyle{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+@media only screen and (min-width: 300px) and (max-width: 880px) {
+  .MainChildStyle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .FooterChilds{
-      display:flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      /* border-bottom: 1px solid grey; */
-      width: 100%;
-    }
+  .FooterChilds {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 
-    .FooterChildsUl{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin-bottom: 40px;
+  .FooterChildsUl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+  }
 
-      }
+  .FooterLinks {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+  }
 
+  .Subscribe {
+    display: flex;
+    align-items: end;
+  }
 
-    .FooterLinks {
-      font-family: Poppins;
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 24px;
-      text-align: left;
-      text-underline-position: from-font;
-      text-decoration-skip-ink: none;
-      color: #9f9f9f;
-    }
-
-    .Subscribe{
-      display: flex;
-      align-items: end;
-    }
-
-    .NewsLetterSubscribe{
-      margin-bottom: 4px;
-    }
-    
-
+  .NewsLetterSubscribe {
+    margin-bottom: 4px;
+  }
 }
 
-@media only screen and (min-width:300) and (max-width:589){
-  .FooterChildsUl{
+@media only screen and (min-width: 300px) and (max-width: 589px) {
+  .FooterChildsUl {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,14 +137,9 @@
     font-family: Poppins;
     font-size: 26px;
     font-weight: 500;
-    line-height: 24px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #9f9f9f;
   }
 
-  .TextStyle{
+  .TextStyle {
     text-align: center;
   }
 }

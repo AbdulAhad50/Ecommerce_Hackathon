@@ -8,7 +8,6 @@ import { CiSearch } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
 import { MenuIcon } from "lucide-react";
 // import DesktopCart from "@/app/DesktopCart/DesktopCart";
-// import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import style from "./nav.module.css";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { StoreData } from "@/app/store/StoreContext";
